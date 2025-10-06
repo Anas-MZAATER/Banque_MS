@@ -14,5 +14,7 @@ public class Compte {
     private Date dateCreation;
     @Enumerated(EnumType.STRING)
     private TypeCompte type;
+    @ManyToOne
+    private Client client;
 
 }
